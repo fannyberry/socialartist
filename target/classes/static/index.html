@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SocialArtist · Iniciar sesión</title>
+  <link rel="stylesheet" href="/src/styles/estilos.css">
+</head>
+<body class="centrado">
+  <main class="tarjeta">
+    <h1>SocialArtist</h1>
+    <p class="sub">Explora y comparte arte</p>
+    <form id="form-login">
+      <label>Usuario
+        <input name="nombreUsuario" required autocomplete="username">
+      </label>
+      <label>Contraseña
+        <input type="password" name="contrasena" required autocomplete="current-password">
+      </label>
+      <a class="enlace" href="/src/views/registro.html">Crear una cuenta</a>
+      <p id="mensaje" class="mensaje" role="alert"></p>
+      <button type="submit">Iniciar sesión</button>
+    </form>
+  </main>
+  <script src="/src/js/api.js"></script>
+  <script src="/src/js/auth.js"></script>
+</body>
+</html>
